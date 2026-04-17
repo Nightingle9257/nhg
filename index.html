@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>No Headphone Gamerz</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #020617, #0f172a);
+      color: white;
+    }
+
+    /* HEADER */
+    header {
+      padding: 20px;
+      text-align: center;
+      font-size: 26px;
+      font-weight: 600;
+      background: rgba(2, 6, 23, 0.7);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
+    header a {
+      color: #38bdf8;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    header a:hover {
+      color: #7dd3fc;
+    }
+
+    /* MAIN */
+    .container {
+      padding: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .title {
+      font-size: 26px;
+      margin-bottom: 20px;
+      color: #e2e8f0;
+    }
+
+    /* NOTICE */
+    .notice {
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid rgba(56, 189, 248, 0.4);
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 25px;
+      font-size: 14px;
+      color: #7dd3fc;
+    }
+
+    /* GRID */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    /* CARD */
+    .card {
+      background: rgba(30, 41, 59, 0.6);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: 0.3s;
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .card:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+
+    .card img {
+      width: 100%;
+      aspect-ratio: 2/3;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .download {
+      display: inline-block;
+      padding: 8px 14px;
+      background: linear-gradient(135deg, #22c55e, #4ade80);
+      color: black;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .download:hover {
+      transform: scale(1.05);
+      background: linear-gradient(135deg, #16a34a, #22c55e);
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #94a3b8;
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <a href="https://youtube.com/noheadphonegamerz" target="_blank">
+      No Headphone Gamerz
+    </a>
+  </header>
+
+  <!-- MAIN -->
+  <div class="container">
+
+    <!-- NOTICE BOX -->
+    <div class="notice" id="homeNotice"></div>
+
+    <div class="title"> Available Stories</div>
+
+    <div class="grid">
+
+      <!-- MVS -->
+      <div class="card">
+        <a href="mvs/">
+          <img src="mvs.jpg" alt="My Vampire System">
+        </a>
+        <div class="card-content">
+          <h2>My Vampire System</h2>
+          <a href="mvs/" class="download">View Downloads</a>
+        </div>
+      </div>
+
+      <!-- HWFM -->
+      <div class="card">
+        <a href="hwfm/">
+          <img src="hwfm.jpg" alt="He Who Fights With Monsters">
+        </a>
+        <div class="card-content">
+          <h2>He Who Fights With Monsters</h2>
+          <a href="hwfm/" class="download">View Downloads</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 No Headphone Gamerz
+  </footer>
+
+  <!-- NOTICE SCRIPT -->
+  <script>
+    const noticeBox = document.getElementById("homeNotice");
+
+    //  EDIT YOUR NOTICE HERE
+    let noticeText = "MVS links are being added as soon as they are uploaded.";
+
+    if (noticeText.trim() === "") {
+      noticeBox.innerHTML = " No notice";
+    } else {
+      noticeBox.innerHTML = " " + noticeText;
+    }
+  </script>
+
+</body>
+</html>
