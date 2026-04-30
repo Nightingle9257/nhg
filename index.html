@@ -147,7 +147,7 @@
     <!-- NOTICE BOX -->
     <div class="notice" id="homeNotice"></div>
 
-    <div class="title"> Available Stories</div>
+    <div class="title">📚 Available Stories</div>
 
     <div class="grid">
 
@@ -173,6 +173,17 @@
         </div>
       </div>
 
+      <!-- God Eye -->
+      <div class="card">
+        <a href="godeye/">
+          <img src="ge.jpg" alt="God Eye">
+        </a>
+        <div class="card-content">
+          <h2>God Eye</h2>
+          <a href="godeye/" class="download">View Downloads</a>
+        </div>
+      </div>
+
     </div>
   </div>
 
@@ -185,13 +196,13 @@
   <script>
     const noticeBox = document.getElementById("homeNotice");
 
-    //  EDIT YOUR NOTICE HERE
+    // EDIT YOUR NOTICE HERE
     let noticeText = "MVS fully uploaded and next is God Eye";
 
     if (noticeText.trim() === "") {
-      noticeBox.innerHTML = " No notice";
+      noticeBox.innerHTML = "📢 No notice";
     } else {
-      noticeBox.innerHTML = " " + noticeText;
+      noticeBox.innerHTML = "📢 " + noticeText;
     }
   </script>
 
