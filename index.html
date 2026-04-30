@@ -21,7 +21,6 @@
       color: white;
     }
 
-    /* HEADER */
     header {
       padding: 20px;
       text-align: center;
@@ -42,7 +41,6 @@
       color: #7dd3fc;
     }
 
-    /* MAIN */
     .container {
       padding: 30px;
       max-width: 1200px;
@@ -55,7 +53,6 @@
       color: #e2e8f0;
     }
 
-    /* NOTICE */
     .notice {
       background: rgba(56, 189, 248, 0.1);
       border: 1px solid rgba(56, 189, 248, 0.4);
@@ -66,14 +63,12 @@
       color: #7dd3fc;
     }
 
-    /* GRID */
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 25px;
     }
 
-    /* CARD */
     .card {
       background: rgba(30, 41, 59, 0.6);
       border-radius: 16px;
@@ -119,7 +114,6 @@
       background: linear-gradient(135deg, #16a34a, #22c55e);
     }
 
-    /* FOOTER */
     footer {
       text-align: center;
       padding: 20px;
@@ -134,17 +128,14 @@
 
 <body>
 
-  <!-- HEADER -->
   <header>
     <a href="https://youtube.com/noheadphonegamerz" target="_blank">
       No Headphone Gamerz
     </a>
   </header>
 
-  <!-- MAIN -->
   <div class="container">
 
-    <!-- NOTICE BOX -->
     <div class="notice" id="homeNotice"></div>
 
     <div class="title">📚 Available Stories</div>
@@ -169,7 +160,7 @@
         </a>
         <div class="card-content">
           <h2>He Who Fights With Monsters</h2>
-          <a href="https://cloudfirepro.com/en/yEL73g0nz9Ba/folder" class="download">View Downloads</a>
+          <a href="hwfm/" class="download">View Downloads</a>
         </div>
       </div>
 
@@ -184,20 +175,29 @@
         </div>
       </div>
 
+      <!-- Dragon's Revenge -->
+      <div class="card">
+        <a href="dragonsrevenge/">
+          <img src="dr.jpg" alt="Dragon's Revenge">
+        </a>
+        <div class="card-content">
+          <h2>Dragon's Revenge</h2>
+          <a href="dragonsrevenge/" class="download">View Downloads</a>
+        </div>
+      </div>
+
     </div>
   </div>
 
-  <!-- FOOTER -->
   <footer>
     © 2026 No Headphone Gamerz
   </footer>
 
-  <!-- NOTICE SCRIPT -->
   <script>
     const noticeBox = document.getElementById("homeNotice");
 
     // EDIT YOUR NOTICE HERE
-    let noticeText = "God Eye fully uploaded and next is Dragon's Revenge";
+    let noticeText = "Dragon's Revenge fully uploaded and next is Shadow Billionaire";
 
     if (noticeText.trim() === "") {
       noticeBox.innerHTML = "📢 No notice";
