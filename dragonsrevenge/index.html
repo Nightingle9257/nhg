@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dragon's Revenge - Downloads</title>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #020617, #0f172a);
+      color: white;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    /* NOTICE BOX */
+    .notice {
+      background: rgba(251, 191, 36, 0.1);
+      border: 1px solid rgba(251, 191, 36, 0.4);
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 25px;
+      font-size: 14px;
+      color: #fde68a;
+    }
+
+    /* DOWNLOAD LIST */
+    .list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .item {
+      background: rgba(30, 41, 59, 0.8);
+      padding: 15px 18px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: 0.2s;
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .item:hover {
+      transform: translateX(5px);
+      background: rgba(51, 65, 85, 0.9);
+    }
+
+    .left {
+      font-weight: 500;
+    }
+
+    .download {
+      padding: 6px 12px;
+      background: #22c55e;
+      color: black;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+      transition: 0.2s;
+    }
+
+    .download:hover {
+      background: #16a34a;
+      transform: scale(1.05);
+    }
+
+    .back {
+      display: block;
+      margin: 30px auto 0;
+      text-align: center;
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    .back:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <h1>📖 Dragon's Revenge</h1>
+
+  <div class="container">
+
+    <!-- NOTICE BOX -->
+    <div class="notice" id="noticeBox">
+      ⚠️ These files are split using WinRAR. Download all parts and extract Part 1 only. Use WinRAR (PC) or ZArchiver (Mobile).
+    </div>
+
+    <!-- DOWNLOAD LIST -->
+    <div class="list">
+      <div class="item"><span class="left">Part 1</span><a href="https://dfiley.com/qTHGV9UYEqGON6p/file" class="download">Download</a></div>
+      <div class="item"><span class="left">Part 2</span><a href="https://dfiley.com/ZdOD7iglPE6BERD/file" class="download">Download</a></div>
+      <div class="item"><span class="left">Part 3</span><a href="https://dfiley.com/nvQFHdvDrYuCWW2/file" class="download">Download</a></div>
+      <div class="item"><span class="left">Part 4</span><a href="https://dfiley.com/NIPKR5UwPD7qzLk/file" class="download">Download</a></div>
+    </div>
+
+    <a href="../" class="back">⬅ Back to Home</a>
+  </div>
+
+  <!-- DEVICE DETECTION SCRIPT -->
+  <script>
+    const notice = document.getElementById("noticeBox");
+    const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+    if (isMobile) {
+      notice.innerHTML = `
+        ⚠️ <strong>Important:</strong> These files are split using WinRAR.<br><br>
+        📱 Use <b>ZArchiver</b> to extract files on mobile.<br><br>
+        👉 Download all parts and extract <b>Part 1</b> only — others will join automatically.
+      `;
+    } else {
+      notice.innerHTML = `
+        ⚠️ <strong>Important:</strong> These files are split using WinRAR.<br><br>
+        💻 Use <b>WinRAR</b> to extract files on PC.<br><br>
+        👉 Download all parts and extract <b>Part 1</b> only — others will join automatically.
+      `;
+    }
+  </script>
+
+</body>
+</html>
